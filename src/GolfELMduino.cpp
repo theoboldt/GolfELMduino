@@ -1,4 +1,4 @@
-#include "ELMduino.h"
+#include "GolfELMduino.h"
 
 /*
  bool ELM327::begin(Stream &stream, const bool& debug, const uint16_t& timeout, const char& protocol, const uint16_t& payloadLen, const byte& dataTimeout)
@@ -2662,7 +2662,7 @@ bool ELM327::resetDTC()
         {
             if (debugMode)
             {
-                Serial.println(F("ELMduino: DTC successfully reset."));
+                Serial.println(F("GolfELMduino: DTC successfully reset."));
             }
 
             return true;
@@ -2672,7 +2672,7 @@ bool ELM327::resetDTC()
     {
         if (debugMode)
         {
-            Serial.println(F("ELMduino: Resetting DTC codes failed."));
+            Serial.println(F("GolfELMduino: Resetting DTC codes failed."));
         }
     }
 
@@ -2838,7 +2838,7 @@ void ELM327::currentDTCCodes(const bool &isBlocking)
 
                 if (debugMode)
                 {
-                    Serial.print(F("ELMduino: Found code: "));
+                    Serial.print(F("GolfELMduino: Found code: "));
                     Serial.println(temp);
                 }
             }
@@ -2847,7 +2847,7 @@ void ELM327::currentDTCCodes(const bool &isBlocking)
         {
             if (debugMode)
             {
-                Serial.println(F("ELMduino: DTC response received with no valid data."));
+                Serial.println(F("GolfELMduino: DTC response received with no valid data."));
             }
         }
         return;
@@ -2858,7 +2858,7 @@ void ELM327::currentDTCCodes(const bool &isBlocking)
 
         if (debugMode)
         {
-            Serial.println(F("ELMduino: Getting current DTC codes failed."));
+            Serial.println(F("GolfELMduino: Getting current DTC codes failed."));
             printError();
         }
     }

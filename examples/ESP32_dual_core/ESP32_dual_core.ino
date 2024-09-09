@@ -1,5 +1,5 @@
 #include <BluetoothSerial.h>
-#include <ELMduino.h>
+#include <GolfELMduino.h>
 #include <atomic>
 
 const uint8_t led = 2;

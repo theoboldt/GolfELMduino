@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-#include "ELMduino.h"
+#include "GolfELMduino.h"
 
 
 SoftwareSerial mySerial(2, 3); // RX, TX

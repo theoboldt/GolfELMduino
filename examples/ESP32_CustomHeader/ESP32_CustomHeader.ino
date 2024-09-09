@@ -17,7 +17,7 @@ some post-processing to calculate the correct value.
 
 Managing Query State
 We also demonstrate managing the query state used by the loop() method. This is typically
-managed internally by ELMduino for standard PID methods. 
+managed internally by GolfELMduino for standard PID methods.
 
 Customize all the things!
 The header value, PID, data value bytes and adjustment formula are generally unique for 
@@ -27,7 +27,7 @@ your specific vehicle. This example almost certainly will not work for you "as-i
 */
 
 #include "BluetoothSerial.h"
-#include "ELMduino.h"
+#include "GolfELMduino.h"
 
 BluetoothSerial SerialBT;
 #define ELM_PORT SerialBT

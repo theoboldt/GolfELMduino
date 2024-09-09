@@ -1,4 +1,4 @@
-#include "ELMduino.h"
+#include "GolfELMduino.h"
 #include <BluetoothSerial.h>
 
 #define ELM_PORT SerialBT
@@ -15,7 +15,7 @@ dtc_states dtc_state = MILSTATUS;
 uint8_t numCodes = 0;
 uint8_t milStatus =0;
 
-// This example program demonstrates how to use ELMduino to check the MIL (Check Engine Light)
+// This example program demonstrates how to use GolfELMduino to check the MIL (Check Engine Light)
 // status and the number of current DTC codes that are present. 
 
 void setup()
